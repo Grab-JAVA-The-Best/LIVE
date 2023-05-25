@@ -103,4 +103,8 @@ public class Users extends Member implements UserDetails {
         super.updateInformation(password, request.getPhone(), request.getEmail(), imgSrc);
         this.region = request.getRegion();
     }
+
+    public void updateScore(int score) {
+        this.score += score;
+    }
 }

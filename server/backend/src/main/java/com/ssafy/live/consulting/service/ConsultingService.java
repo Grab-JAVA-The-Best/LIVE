@@ -1,5 +1,6 @@
 package com.ssafy.live.consulting.service;
 
+import static com.ssafy.live.common.domain.Entity.status.ConsultingStatus.CONSULTING_CANCLED;
 import static com.ssafy.live.common.domain.Entity.status.ConsultingStatus.CONSULTING_CONFIRMED;
 import static com.ssafy.live.common.domain.Entity.status.ConsultingStatus.CONSULTING_PROCESSING;
 import static com.ssafy.live.common.exception.ErrorCode.CONSULTING_NOT_FOUND;
@@ -157,9 +158,12 @@ public class ConsultingService {
         if (request.getStatus() == CONSULTING_CONFIRMED.getValue()) {
             info = "예약이 확정되었습니다.";
             smsContent = SMSContent.CONSULTING_CONFIRMED;
+        } else if (request.getStatus() == CONSULTING_PROCESSING.getValue()) {
+            info = "상담이 시작되었습니다.";
+            smsContent = SMSContent.CONSULTING_PROCESSING;
         } else {
             info = "예약이 취소되었습니다.";
-            smsContent = SMSContent.CONSULTING_CANCEL;
+            smsContent = SMSContent.CONSULTING_CANCLED;
         }
         Notice notice = Notice.builder().users(consulting.getUsers())
             .realtor(consulting.getRealtor()).noticeInfo(info).noticeWriter(writer).build();

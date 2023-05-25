@@ -21,7 +21,6 @@ public class ItemOptionResponse {
         private boolean airConditioner;
         private boolean desk;
         private boolean closet;
-        private boolean bath;
         private boolean sink;
         private boolean cctv;
         private boolean diningTable;
@@ -54,7 +53,6 @@ public class ItemOptionResponse {
                 .airConditioner(itemOption.isAirConditioner())
                 .desk(itemOption.isDesk())
                 .closet(itemOption.isCloset())
-                .bath(itemOption.isBath())
                 .sink(itemOption.isSink())
                 .cctv(itemOption.isCctv())
                 .diningTable(itemOption.isDiningTable())

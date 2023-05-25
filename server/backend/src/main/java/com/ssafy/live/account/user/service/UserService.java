@@ -15,10 +15,12 @@ import com.ssafy.live.account.user.controller.dto.UserRequest.Update;
 import com.ssafy.live.account.user.controller.dto.UserResponse;
 import com.ssafy.live.account.user.domain.entity.Users;
 import com.ssafy.live.account.user.domain.repository.UsersRepository;
+import com.ssafy.live.common.domain.Entity.status.ConsultingStatus;
 import com.ssafy.live.common.domain.Response;
 import com.ssafy.live.common.domain.SMSContent;
 import com.ssafy.live.common.exception.BadRequestException;
 import com.ssafy.live.common.service.SMSService;
+import com.ssafy.live.consulting.domain.repository.ConsultingRepository;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 import lombok.RequiredArgsConstructor;
@@ -43,6 +45,7 @@ import org.springframework.web.multipart.MultipartFile;
 public class UserService {
 
     private final UsersRepository usersRepository;
+    private final ConsultingRepository consultingRepository;
     private final PasswordEncoder passwordEncoder;
     private final Response response;
     private final JwtTokenProvider jwtTokenProvider;
@@ -63,7 +66,8 @@ public class UserService {
             UserRequest.SignUp.toEntity(signUp, passwordEncoder.encode(signUp.getPassword()),
                 imgSrc));
 
-        smsService.sendSMS(signUp.getName()+"님 " + SMSContent.NEW_USER.getMessage(), signUp.getPhone());
+        smsService.sendSMS(signUp.getName() + "님 " + SMSContent.NEW_USER.getMessage(),
+            signUp.getPhone());
         return response.success("회원가입에 성공했습니다.");
     }
 
@@ -95,7 +99,9 @@ public class UserService {
     public ResponseEntity<?> findUserDetail(UserDetails user) {
         Users users = usersRepository.findById(user.getUsername())
             .orElseThrow(() -> new BadRequestException(USER_NOT_FOUND));
-        UserResponse.FindDetail detail = UserResponse.FindDetail.toResponse(users);
+        Long count = consultingRepository.countByUsersAndStatus(users,
+            ConsultingStatus.CONSULTING_PAST);
+        UserResponse.FindDetail detail = UserResponse.FindDetail.toResponse(users, count);
         return response.success(detail, "회원 정보를 조회하였습니다.", HttpStatus.OK);
     }
 

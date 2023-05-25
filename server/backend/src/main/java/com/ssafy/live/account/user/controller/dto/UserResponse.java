@@ -43,8 +43,9 @@ public class UserResponse {
         private String gender;
         private float score;
         private String imageSrc;
+        private Long count;
 
-        public static UserResponse.FindDetail toResponse(Users user) {
+        public static UserResponse.FindDetail toResponse(Users user, Long count) {
             return FindDetail.builder()
                 .id(user.getId())
                 .name(user.getName())
@@ -54,6 +55,7 @@ public class UserResponse {
                 .gender(user.getGender())
                 .score(user.getScore())
                 .imageSrc(user.getImageSrc())
+                .count(count)
                 .build();
         }
     }

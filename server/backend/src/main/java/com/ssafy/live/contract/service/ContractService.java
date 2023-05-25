@@ -132,6 +132,11 @@ public class ContractService {
         Contract contract = contractRepository.findById(contractNo)
             .orElseThrow(() -> new BadRequestException(CONTRACT_NOT_FOUND));
         contract.changeStatus(status);
+        if (status == 2) {
+            Users users = contract.getUsers();
+            users.updateScore(10);
+            usersRepository.save(users);
+        }
         contractRepository.save(contract);
 
         smsService.sendSMS(contract.getNo(), SMSContent.CONTRACT_UPDATE, contract.getUsers());

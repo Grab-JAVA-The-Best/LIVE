@@ -39,7 +39,6 @@ public class ItemOption {
     private boolean airConditioner;
     private boolean desk;
     private boolean closet;
-    private boolean bath;
     private boolean sink;
     private boolean cctv;
     @Column(name = "dining_table")

@@ -1,5 +1,8 @@
 package com.ssafy.live.common.service;
 
+import static com.ssafy.live.common.domain.Entity.status.ConsultingStatus.CONSULTING_CONFIRMED;
+import static com.ssafy.live.common.domain.Entity.status.ConsultingStatus.CONSULTING_PROCESSING;
+
 import com.ssafy.live.account.realtor.domain.entity.Realtor;
 import com.ssafy.live.account.user.domain.entity.Users;
 import com.ssafy.live.common.domain.SMSContent;
@@ -80,15 +83,11 @@ public class SMSService {
         sendSMS(content, users.getPhone());
     }
 
-    @Scheduled(cron = "0 30 8 * * ?")
+    @Scheduled(cron = "0 15 1 * * ?", zone = "Asia/Seoul")
     @Transactional
     public void reserveSMSScheduler() {
-        LocalDateTime start = LocalDateTime.of(LocalDate.now(),
-            LocalTime.of(0, 0, 0));
-        LocalDateTime end = LocalDateTime.of(LocalDate.now(),
-            LocalTime.of(23, 59, 59));
-        List<Consulting> consultingList = consultingRepository.findByConsultingDateBetween(start,
-            end);
+        List<Consulting> consultingList = consultingRepository.findByStatusBetweenAndConsultingDateStartigWith(
+            CONSULTING_CONFIRMED.getValue(), CONSULTING_PROCESSING.getValue());
 
         if (consultingList != null && !consultingList.isEmpty()) {
             Set<Users> set = new HashSet<>();

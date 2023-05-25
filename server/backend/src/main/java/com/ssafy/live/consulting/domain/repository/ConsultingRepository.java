@@ -27,7 +27,10 @@ public interface ConsultingRepository extends JpaRepository<Consulting, Long> {
     List<Consulting> findByUsersAndStatusOrStatusOrderByConsultingDate(Users user,
         ConsultingStatus status, ConsultingStatus status1);
 
-    List<Consulting> findByConsultingDateBetween(LocalDateTime start, LocalDateTime end);
+    @Query(value = "SELECT * FROM consulting "
+        + "where status between :status1 and :status2 "
+        + "and date_format(consulting_date, \"%Y-%m-%d\") = curdate()", nativeQuery = true)
+    List<Consulting> findByStatusBetweenAndConsultingDateStartigWith(int status1, int status2);
 
     @Query(value = "SELECT * FROM consulting "
         + "where realtor_no = :realtorNo "
@@ -35,4 +38,6 @@ public interface ConsultingRepository extends JpaRepository<Consulting, Long> {
         + "and date_format(consulting_date, \"%Y-%m-%d\") = curdate()", nativeQuery = true)
     List<Consulting> findByRealtorNoAndStatusBetweenAndConsultingDateStartigWith(Long realtorNo,
         int status1, int status2);
+
+    Long countByUsersAndStatus(Users users, ConsultingStatus consultingPast);
 }

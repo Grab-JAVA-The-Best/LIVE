@@ -30,7 +30,7 @@ public class ItemController {
     private ResponseEntity<?> registItem(
         Authentication authentication,
         @RequestPart ItemRequest.ItemRegistRequest itemRegistRequest,
-        @RequestPart List<MultipartFile> files) throws IOException {
+        @RequestPart(value = "files", required = false) List<MultipartFile> files) throws IOException {
         UserDetails principal = (UserDetails) authentication.getPrincipal();
         return itemService.registItem(principal, itemRegistRequest, files);
     }

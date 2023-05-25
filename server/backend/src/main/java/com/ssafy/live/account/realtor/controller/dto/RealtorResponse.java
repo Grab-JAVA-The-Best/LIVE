@@ -178,6 +178,7 @@ public class RealtorResponse {
             private String reviewInfo;
             private float ratingScore;
             private LocalDateTime createDate;
+            private String userName;
 
             public static Reviews toEntity(Review review) {
                 return Reviews.builder()
@@ -185,6 +186,7 @@ public class RealtorResponse {
                     .reviewInfo(review.getReviewInfo())
                     .ratingScore(review.getRatingScore())
                     .createDate(review.getCreatedDate())
+                    .userName(review.getUsers().getName())
                     .build();
             }
         }

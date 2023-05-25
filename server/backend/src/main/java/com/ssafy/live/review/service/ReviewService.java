@@ -39,6 +39,8 @@ public class ReviewService {
         Realtor realtor = realtorRepository.findById(regist.getRealtorNo())
             .orElseThrow(() -> new BadRequestException(REALTOR_NOT_FOUND));
         Users users = usersRepository.findById(regist.getUserNo()).get();
+        users.updateScore(5);
+        usersRepository.save(users);
         Consulting consulting = consultingRepository.findById(regist.getConsultingNo()).get();
         reviewRepository.save(
             ReviewRequest.Regist.toEntity(realtor, users, consulting, regist.getReviewInfo(),
