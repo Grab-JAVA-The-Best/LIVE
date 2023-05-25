@@ -1,6 +1,6 @@
 # Live(누구나 쉽게 집을 구할 수 있는 One-Stop 완전 비대면 부동산 서비스)
 
-![CON_1](/uploads/a2d156cceaaddba9751fe63a4098ea91/CON_1.png)
+![CON_1](https://user-images.githubusercontent.com/62332870/221108813-3092e9e9-6a61-4d75-ae50-ec99d59c051b.png)
 
 
 ## 1. Live 소개
@@ -11,7 +11,7 @@
 
 ## 2. 주요 기능
 
-![화면_녹화_전체](/uploads/46cc39ffbc6c2d0d4ba372d99c0f8ad4/화면_녹화_전체.gif)
+![화면_녹화_전체 (1)](https://user-images.githubusercontent.com/62332870/221125944-bca6f8ac-7927-4a80-a59d-fe504e44743c.gif)
 
 ---
 
@@ -88,7 +88,7 @@ WebSocket, Session으로 Signaling Server를 구축하고 Kurento Media Server�
 
 ### 3-2. 서비스 아키텍처
 
-![010](/uploads/d25989c92da14299eaddc1b02737ea73/010.png)
+![010](https://user-images.githubusercontent.com/62332870/221108720-89995865-0426-4975-9275-ef0e403032da.png)
 
 
 ## 4. 설계 문서
@@ -97,22 +97,22 @@ WebSocket, Session으로 Signaling Server를 구축하고 Kurento Media Server�
 
 ### 4-1. ERD
 
-![Untitled](/uploads/b1ee4c4745cc52ee2158758278fec8b6/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/62332870/221108913-c13d6bbc-7f92-4b44-ab16-80481c69906d.png)
 
 
 ### 4-2. 화면 설계서
 
-![_ED_99_94_EB_A9_B4__EC_84_A4_EA_B3_84_EC_84_9C](/uploads/e5387e076af85891b0116703f2255183/_ED_99_94_EB_A9_B4__EC_84_A4_EA_B3_84_EC_84_9C.png)
+![_ED_99_94_EB_A9_B4__EC_84_A4_EA_B3_84_EC_84_9C](https://user-images.githubusercontent.com/62332870/221108956-a49ced06-fc4d-4950-ba5c-a257e7b06e5f.png)
 
 
 ### 4-3. 요구사항 명세서
 
-![요구사항_명세서](/uploads/1dad104a101bd9319ae8fe962ad2279e/요구사항_명세서.gif)
+![요구사항_명세서](https://user-images.githubusercontent.com/62332870/221108993-15b0457a-87e6-42ec-97bb-cea0a5ba2fe7.gif)
 
 
 ### 4-4. API 명세서
 
-![API_명세서](/uploads/b7bac6b6df9fe90669788402ada98899/API_명세서.gif)
+![API_명세서](https://user-images.githubusercontent.com/62332870/221109025-bb211cd3-4d40-4831-9a80-88295047f8a8.gif)
 
 
 ## 5. 협업 툴 및 코드 컨벤션
@@ -139,11 +139,11 @@ UpperCamelCase 로 작성한다. UpperCamelCase 란 문장의 공백을 삭제�
 
 **메소드 이름**
 
-lowerCamelCase 🐫 로 작성한다. 메소드 이름은 동사로 작성한다. ex) `sendMessage` `stop`
+lowerCamelCase 🐫 로 작성한다. 메소드 이름은 동사로 작성한다. ex) `sendMessage` `stop`
 
 **상수 이름**
 
-상수이름은 `CONSTANT_CASE` 스타일로 작성한다. 
+상수이름은 `CONSTANT_CASE` 스타일로 작성한다. 
 
 ### 5-3. Git 컨벤션
 
@@ -166,4 +166,4 @@ ex) **feature/live-func**
 
 ---
 
-![020](/uploads/bb106efaa6d9726104af4a479534e0ab/020.png)
+![020](https://user-images.githubusercontent.com/62332870/221109064-e63c14c8-18ae-4927-95f1-1c0f6dafaf12.png)
