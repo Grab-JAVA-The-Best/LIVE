@@ -1,0 +1,309 @@
+.tenantInfo {
+  margin: 3%;
+  font-size: 1.05rem;
+
+  .inner {
+    width: 67.7%;
+    margin-left: 15%;
+
+    h2 {
+      text-align: left;
+    }
+
+    .tenantInfoContent {
+      text-align: left;
+      line-height: 1.5rem;
+
+      .infoBoxList {
+        .contractor {
+          display: flex;
+
+          strong {
+            flex: 1;
+            padding: 1% 0 0 0;
+          }
+
+          input {
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            padding: 0.9%;
+            margin-right: 58%;
+            flex: 0.7;
+            margin-bottom: 1%;
+          }
+        }
+
+        .contractorPhone {
+          display: flex;
+
+          strong {
+            flex: 1;
+            padding: 1.5% 0 0 0;
+          }
+
+          input {
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            padding: 0.9%;
+            margin-right: 58%;
+            flex: 0.7;
+            margin-bottom: 1%;
+          }
+        }
+
+        .contractorGender {
+          display: flex;
+
+          strong {
+            flex: 1;
+            padding: 1.5% 0 0 0;
+          }
+
+          input {
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            padding: 0.9%;
+            margin-right: 58%;
+            flex: 0.7;
+            margin-bottom: 1%;
+          }
+        }
+
+        .contractorAge {
+          input {
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+          }
+        }
+
+        .contractorAddress {
+          display: flex;
+
+          strong {
+            flex: 1;
+            padding: 1.5% 0 0 0;
+          }
+
+          .searchAddressBox {
+            flex: 1.5;
+            margin-right: 41.5%;
+            margin-bottom: 1%;
+
+            .searchAddress {
+              margin-bottom: 1%;
+              display: flex;
+
+              input {
+                background: #fafafa;
+                border: 1px solid #bbbbbb;
+                border-radius: 4px;
+                padding: 2% 3% 2% 3%;
+                flex: 1;
+              }
+
+              button {
+                background: #707070;
+                border-radius: 4px;
+                color: white;
+                padding: 0.7%;
+                flex: 1.5;
+                margin-left: 3%;
+              }
+            }
+
+            .detailAdress {
+              input {
+                background: #fafafa;
+                border: 1px solid #bbbbbb;
+                border-radius: 4px;
+                padding: 2%;
+                width: 100%;
+              }
+            }
+          }
+        }
+
+        .contractorAge {
+          display: flex;
+          margin-bottom: 3%;
+
+          strong {
+            flex: 1;
+            padding: 1.5% 0 0 0;
+          }
+
+          input {
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            padding: 0.9%;
+            margin-right: 58%;
+            flex: 0.7;
+            margin-bottom: 1%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tenantInfo {
+    margin: 3%;
+    font-size: 1.05rem;
+
+    .inner {
+      width: 100%;
+      margin-left: 0;
+
+      h2 {
+        text-align: left;
+      }
+
+      .tenantInfoContent {
+        padding: 2% 0;
+        text-align: left;
+        line-height: 1.5rem;
+
+        .infoBoxList {
+          .contractor {
+            display: flex;
+
+            strong {
+              flex: 1;
+              padding: 1% 0 0 0;
+            }
+
+            input {
+              flex: 1;
+              background: #fafafa;
+              border: 1px solid #bbbbbb;
+              border-radius: 4px;
+              padding: 1.5%;
+              margin-right: 0;
+              margin-bottom: 2%;
+            }
+          }
+
+          .contractorPhone {
+            display: flex;
+
+            strong {
+              flex: 1;
+              padding: 1.5% 0 0 0;
+            }
+
+            input {
+              flex: 1;
+              background: #fafafa;
+              border: 1px solid #bbbbbb;
+              border-radius: 4px;
+              padding: 1.5%;
+              margin-right: 0;
+              margin-bottom: 2%;
+            }
+          }
+
+          .contractorGender {
+            display: flex;
+
+            strong {
+              flex: 1;
+              padding: 1.5% 0 0 0;
+            }
+
+            input {
+              flex: 1;
+              background: #fafafa;
+              border: 1px solid #bbbbbb;
+              border-radius: 4px;
+              padding: 1%;
+              margin-right: 0;
+              margin-bottom: 2%;
+            }
+          }
+
+          .contractorAddress {
+            display: flex;
+
+            strong {
+              flex: 1;
+              padding: 1.5% 0 0 0;
+            }
+
+            .searchAddressBox {
+              flex: 1.1;
+              margin-right: 0;
+              margin-bottom: 1%;
+
+              .searchAddress {
+                margin-bottom: 1%;
+                display: flex;
+
+                input {
+                  background: #fafafa;
+                  border: 1px solid #bbbbbb;
+                  border-radius: 4px;
+                  padding: 2% 3% 2% 3%;
+                  flex: 1;
+                }
+
+                button {
+                  background: #707070;
+                  border-radius: 4px;
+                  color: white;
+                  padding: 0.7%;
+                  flex: 1.5;
+                  margin-left: 3%;
+                }
+              }
+
+              .detailAdress {
+                input {
+                  background: #fafafa;
+                  border: 1px solid #bbbbbb;
+                  border-radius: 4px;
+                  padding: 2%;
+                  width: 100%;
+                  margin-bottom: 2%;
+                }
+              }
+
+              .contractorAge {
+                input {
+                  background: #fafafa;
+                  border: 1px solid #bbbbbb;
+                  border-radius: 4px;
+                }
+              }
+            }
+          }
+
+          .contractorAge {
+            display: flex;
+            margin-bottom: 3%;
+
+            strong {
+              flex: 1;
+              padding: 1.5% 0 0 0;
+            }
+
+            input {
+              flex: 1;
+              background: #fafafa;
+              border: 1px solid #bbbbbb;
+              border-radius: 4px;
+              padding: 0.9%;
+              margin-right: 0;
+              margin-bottom: 1%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

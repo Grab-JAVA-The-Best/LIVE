@@ -1,0 +1,69 @@
+.footer {
+  width: 100%;
+  height: 120px;
+  box-sizing: border-box;
+  background: #ededed;
+  padding: 32px 0;
+
+  .footerInner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 50vw;
+
+      @media (max-width: 1024px) {
+        width: 100vw;
+        align-items: center;
+      }
+
+      .partList {
+        display: flex;
+        color: #555555;
+
+        @media (max-width: 1024px) {
+          justify-content: center;
+          width: 100%;
+        }
+
+        li {
+          font-size: 14px;
+          font-weight: 400;
+          margin: 0 1%;
+          cursor: pointer;
+
+          @media (max-width: 1024px) {
+            font-size: calc(14 * 0.1vw);
+          }
+        }
+      }
+
+      .footerDesc {
+        display: flex;
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+
+    .snsIcon {
+      @media (max-width: 1024px) {
+        display: none;
+      }
+
+      :hover {
+        font-size: 24px;
+      }
+      span {
+        margin: calc(6px / (1920px / 100vw));
+        transition: all 0.2s ease;
+        cursor: pointer;
+      }
+    }
+  }
+}

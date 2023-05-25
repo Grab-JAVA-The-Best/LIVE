@@ -1,0 +1,18 @@
+.App {
+  height: 100%;
+  text-align: center;
+
+  > h1 {
+    color: $main-green;
+  }
+}
+
+.wrapper {
+  height: auto;
+  min-height: calc(100% - 72px - 120px);
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    min-height: calc(100% - 56px - 120px);
+  }
+}

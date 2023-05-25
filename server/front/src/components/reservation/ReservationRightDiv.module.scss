@@ -1,0 +1,23 @@
+.rightContainer {
+  width: 60%;
+  h2 {
+    text-align: left;
+    margin-bottom: 0em;
+  }
+  .rightListContainer {
+    padding: 30px;
+    height: 100%;
+    text-align: left;
+    .rightEmptyContainer {
+      height: 100%;
+      color: rgba(187, 187, 187, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(250, 250, 250, 1);
+      box-sizing: border-box;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 26%);
+      border-radius: 4px;
+    }
+  }
+}

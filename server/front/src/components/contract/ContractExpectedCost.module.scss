@@ -1,0 +1,828 @@
+.expectedCost {
+  padding: 0 3% 3% 3%;
+
+  .inner {
+    width: 67.7%;
+    margin-left: 15%;
+
+    .expectedCostContent {
+      h2 {
+        text-align: left;
+      }
+
+      .costBox {
+        padding: 2% 20%;
+
+        .downPayment {
+          display: flex;
+          margin-bottom: 2%;
+
+          p {
+            flex: 1;
+            color: rgba(5, 5, 5, 1);
+            font-weight: 400;
+            padding: 1.5% 0 0 0;
+          }
+
+          input {
+            font-size: 1rem;
+            padding: 2%;
+            text-align: right;
+            flex: 1.5;
+            width: 32%;
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            color: #050505;
+            font-weight: 700;
+          }
+        }
+
+        .balance {
+          display: flex;
+          margin-bottom: 2%;
+
+          p {
+            flex: 1;
+            color: rgba(5, 5, 5, 1);
+            font-weight: 400;
+            padding: 1.5% 0 0 0;
+          }
+
+          input {
+            font-size: 1rem;
+            padding: 2%;
+            text-align: right;
+            flex: 1.5;
+            width: 32%;
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            color: #050505;
+            font-weight: 700;
+          }
+        }
+
+        .brokerageFee {
+          display: flex;
+          margin-bottom: 2%;
+
+          p {
+            flex: 1;
+            color: rgba(5, 5, 5, 1);
+            font-weight: 400;
+            padding: 1.5% 0 0 0;
+          }
+
+          input {
+            font-size: 1rem;
+            padding: 2%;
+            text-align: right;
+            flex: 1.5;
+            width: 32%;
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            color: #050505;
+            font-weight: 700;
+          }
+        }
+
+        hr {
+          width: 60%;
+          margin-left: 20%;
+        }
+      }
+
+      .costLine {
+        width: 70%;
+        margin-left: 20%;
+      }
+
+      .costLine {
+        width: 70%;
+        margin-left: 20%;
+      }
+
+      .cost {
+        margin-top: 1%;
+
+        .totalEstimatedCost {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 10%;
+          font-size: 1.3rem;
+          margin-top: 1.7%;
+
+          h5 {
+            margin-left: 17%;
+          }
+
+          strong {
+            margin-right: 2.5%;
+            color: rgba(66, 211, 149, 1);
+          }
+        }
+
+        .totalCost {
+          strong {
+            margin-left: 20%;
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .agreeCondition {
+        padding: 3% 0 3% 0;
+        margin-left: 5%;
+
+        .checkBox {
+          margin: 2% 0;
+          accent-color: #42d395;
+          border-radius: 4px;
+
+          input {
+            margin-right: 0.5%;
+          }
+
+          strong {
+            margin-right: 3%;
+          }
+
+          hr {
+            width: 30%;
+            margin-left: 39%;
+            margin-top: 1.5%;
+          }
+
+          .agreeCheck {
+            margin-left: 40%;
+            padding: 2% 0 0 0;
+
+            .serviceAgree {
+              display: flex;
+
+              input {
+                margin-right: 1%;
+              }
+
+              p {
+                margin-bottom: 1%;
+              }
+            }
+
+            .personalInfoAgree {
+              display: flex;
+
+              input {
+                margin-right: 1%;
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        margin-left: 11.5%;
+        background: #42d395;
+        border-radius: 4px;
+        border-radius: 4px;
+        border: none;
+        color: white;
+        padding: 1% 10%;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .expectedCost {
+    padding: 3%;
+
+    .inner {
+      width: 100%;
+      margin-left: 0;
+
+      .expectedCostContent {
+        h2 {
+          text-align: left;
+        }
+
+        .costBox {
+          padding: 0;
+          margin-top: 3%;
+
+          .downPayment {
+            display: flex;
+            margin-bottom: 2%;
+
+            p {
+              margin-left: 3%;
+              text-align: left;
+              flex: 1;
+              color: rgba(5, 5, 5, 1);
+              font-weight: 400;
+              padding: 1.5% 0 0 0;
+            }
+
+            input {
+              font-size: 1rem;
+              padding: 1.5%;
+              text-align: right;
+              flex: 1.5;
+              width: 30%;
+              background: #fafafa;
+              border: 1px solid #bbbbbb;
+              border-radius: 4px;
+              color: #050505;
+              font-weight: 700;
+            }
+          }
+
+          .balance {
+            display: flex;
+            margin-bottom: 2%;
+
+            p {
+              margin-left: 3%;
+              text-align: left;
+              flex: 1;
+              color: rgba(5, 5, 5, 1);
+              font-weight: 400;
+              padding: 1.5% 0 0 0;
+            }
+
+            input {
+              font-size: 1rem;
+              padding: 1.5%;
+              text-align: right;
+              flex: 1.5;
+              width: 32%;
+              background: #fafafa;
+              border: 1px solid #bbbbbb;
+              border-radius: 4px;
+              color: #050505;
+              font-weight: 700;
+            }
+          }
+
+          .brokerageFee {
+            display: flex;
+            margin-bottom: 2%;
+
+            p {
+              margin-left: 3%;
+              text-align: left;
+              flex: 1;
+              color: rgba(5, 5, 5, 1);
+              font-weight: 400;
+              padding: 1.5% 0 0 0;
+            }
+
+            input {
+              font-size: 1rem;
+              padding: 1.5%;
+              flex: 1.5;
+              width: 32%;
+              background: #fafafa;
+              border: 1px solid #bbbbbb;
+              border-radius: 4px;
+              color: #050505;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .costLine {
+          display: none;
+        }
+
+        .cost {
+          margin-top: 1%;
+
+          .totalEstimatedCost {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            font-size: 1.4rem;
+            margin-top: 3%;
+
+            h5 {
+              margin-left: 17%;
+            }
+
+            strong {
+              margin-right: 2.5%;
+              color: rgba(66, 211, 149, 1);
+            }
+          }
+
+          .totalCost {
+            strong {
+              margin-left: 0%;
+              font-size: 1.1rem;
+            }
+          }
+        }
+
+        .agreeCondition {
+          padding: 3% 0 3% 0;
+          margin-left: 5%;
+
+          .checkBox {
+            margin: 2% 0;
+            accent-color: #42d395;
+            border-radius: 4px;
+
+            input {
+              margin-right: 0.5%;
+            }
+
+            strong {
+              margin-right: 3%;
+            }
+
+            hr {
+              width: 100%;
+              margin-left: 0%;
+              margin-top: 5%;
+            }
+
+            .agreeCheck {
+              margin-left: 10%;
+              padding: 2% 0 0 0;
+
+              .serviceAgree {
+                display: flex;
+
+                input {
+                  margin-right: 1%;
+                }
+
+                p {
+                  margin-bottom: 1%;
+                }
+              }
+
+              .personalInfoAgree {
+                display: flex;
+
+                input {
+                  margin-right: 1%;
+                }
+              }
+            }
+          }
+        }
+
+        button {
+          margin-left: 0%;
+          background: #bbbbbb;
+          border-radius: 4px;
+          border: none;
+          color: white;
+          padding: 1% 10%;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+.expectedCostRealtor {
+  padding: 0 3% 3% 3%;
+
+  .inner {
+    width: 67.7%;
+    margin-left: 15%;
+
+    .expectedCostContent {
+      h2 {
+        text-align: left;
+      }
+
+      .costBox {
+        padding: 2% 20%;
+
+        .downPayment {
+          display: flex;
+          margin-bottom: 2%;
+
+          p {
+            flex: 1;
+            color: rgba(5, 5, 5, 1);
+            font-weight: 400;
+            padding: 1.5% 0 0 0;
+          }
+
+          strong {
+            font-size: 1rem;
+            padding: 2%;
+            text-align: right;
+            flex: 1.5;
+            width: 32%;
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            color: #050505;
+            font-weight: 700;
+          }
+        }
+
+        .balance {
+          display: flex;
+          margin-bottom: 2%;
+
+          p {
+            flex: 1;
+            color: rgba(5, 5, 5, 1);
+            font-weight: 400;
+            padding: 1.5% 0 0 0;
+          }
+
+          strong {
+            font-size: 1rem;
+            padding: 2%;
+            text-align: right;
+            flex: 1.5;
+            width: 32%;
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            color: #050505;
+            font-weight: 700;
+          }
+        }
+
+        .brokerageFee {
+          display: flex;
+          margin-bottom: 2%;
+
+          p {
+            flex: 1;
+            color: rgba(5, 5, 5, 1);
+            font-weight: 400;
+            padding: 1.5% 0 0 0;
+          }
+
+          input {
+            font-size: 1rem;
+            padding: 2%;
+            text-align: right;
+            flex: 1.5;
+            width: 32%;
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            color: #050505;
+            font-weight: 700;
+          }
+        }
+
+        hr {
+          width: 60%;
+          margin-left: 20%;
+        }
+      }
+
+      .costLine {
+        width: 70%;
+        margin-left: 20%;
+      }
+
+      .costLine {
+        width: 70%;
+        margin-left: 20%;
+      }
+
+      .cost {
+        margin-top: 1%;
+
+        .totalEstimatedCost {
+          display: flex;
+          justify-content: space-between;
+          padding: 0 20%;
+          font-size: 1.3rem;
+          margin-top: 1.7%;
+
+          h5 {
+            margin-left: 17%;
+          }
+
+          strong {
+            margin-right: 2.5%;
+            color: rgba(66, 211, 149, 1);
+          }
+        }
+
+        .totalCost {
+          strong {
+            margin-left: 20%;
+            font-size: 1.1rem;
+          }
+        }
+      }
+
+      .agreeCondition {
+        padding: 3% 0 3% 0;
+        margin-left: 5%;
+
+        .checkBox {
+          margin: 2% 0;
+          accent-color: #42d395;
+          border-radius: 4px;
+
+          input {
+            margin-right: 0.5%;
+          }
+
+          strong {
+            margin-right: 3%;
+          }
+
+          hr {
+            width: 30%;
+            margin-left: 39%;
+            margin-top: 1.5%;
+          }
+
+          .agreeCheck {
+            margin-left: 40%;
+            padding: 2% 0 0 0;
+
+            .serviceAgree {
+              display: flex;
+
+              input {
+                margin-right: 1%;
+              }
+
+              p {
+                margin-bottom: 1%;
+              }
+            }
+
+            .personalInfoAgree {
+              display: flex;
+
+              input {
+                margin-right: 1%;
+              }
+            }
+          }
+        }
+      }
+
+      .buttonList {
+        display: flex;
+        margin: 0 5%;
+
+        .btn1 {
+          flex: 1;
+          margin: 3%;
+          background: #42d395;
+          border-radius: 4px;
+          border: none;
+          color: white;
+          padding: 1%;
+          font-size: 1rem;
+        }
+
+        .btn2 {
+          flex: 1;
+          margin: 3%;
+          background: #bbbbbb;
+          border-radius: 4px;
+          border: none;
+          color: white;
+          padding: 1%;
+          font-size: 1rem;
+          background: #42d395;
+          border-radius: 4px;
+          color: white;
+        }
+
+        .btn3 {
+          flex: 1;
+          margin: 3%;
+          background: #bbbbbb;
+          border-radius: 4px;
+          border: none;
+          color: white;
+          padding: 1%;
+          font-size: 1rem;
+          background: #42d395;
+          border-radius: 4px;
+        }
+
+        .btn4 {
+          flex: 1;
+          margin: 3%;
+          background: #bbbbbb;
+          border-radius: 4px;
+          border: none;
+          color: white;
+          padding: 1%;
+          font-size: 1rem;
+          background: #ff5959;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .expectedCostRealtor {
+    padding: 3%;
+
+    .inner {
+      width: 100%;
+      margin-left: 0;
+
+      .expectedCostContent {
+        h2 {
+          text-align: left;
+        }
+
+        .costBox {
+          padding: 0;
+          margin-top: 3%;
+
+          .downPayment {
+            display: flex;
+            margin-bottom: 2%;
+
+            p {
+              margin-left: 3%;
+              text-align: left;
+              flex: 1;
+              color: rgba(5, 5, 5, 1);
+              font-weight: 400;
+              padding: 1.5% 0 0 0;
+            }
+
+            strong {
+              font-size: 1rem;
+              padding: 1.5%;
+              text-align: right;
+              flex: 1.5;
+              width: 30%;
+              background: #fafafa;
+              border: 1px solid #bbbbbb;
+              border-radius: 4px;
+              color: #050505;
+              font-weight: 700;
+            }
+          }
+
+          .balance {
+            display: flex;
+            margin-bottom: 2%;
+
+            p {
+              margin-left: 3%;
+              text-align: left;
+              flex: 1;
+              color: rgba(5, 5, 5, 1);
+              font-weight: 400;
+              padding: 1.5% 0 0 0;
+            }
+
+            strong {
+              font-size: 1rem;
+              padding: 1.5%;
+              text-align: right;
+              flex: 1.5;
+              width: 32%;
+              background: #fafafa;
+              border: 1px solid #bbbbbb;
+              border-radius: 4px;
+              color: #050505;
+              font-weight: 700;
+            }
+          }
+
+          .brokerageFee {
+            display: flex;
+            margin-bottom: 2%;
+
+            p {
+              margin-left: 3%;
+              text-align: left;
+              flex: 1;
+              color: rgba(5, 5, 5, 1);
+              font-weight: 400;
+              padding: 1.5% 0 0 0;
+            }
+
+            input {
+              font-size: 1rem;
+              padding: 1.5%;
+              flex: 1.5;
+              width: 32%;
+              background: #fafafa;
+              border: 1px solid #bbbbbb;
+              border-radius: 4px;
+              color: #050505;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .costLine {
+          display: none;
+        }
+
+        .cost {
+          margin-top: 1%;
+
+          .totalEstimatedCost {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            font-size: 1.4rem;
+            margin-top: 3%;
+
+            h5 {
+              margin-left: 17%;
+            }
+
+            strong {
+              margin-right: 2.5%;
+              color: rgba(66, 211, 149, 1);
+            }
+          }
+
+          .totalCost {
+            strong {
+              margin-left: 0%;
+              font-size: 1.1rem;
+            }
+          }
+        }
+
+        .agreeCondition {
+          padding: 3% 0 3% 0;
+          margin-left: 5%;
+
+          .checkBox {
+            margin: 2% 0;
+            accent-color: #42d395;
+            border-radius: 4px;
+
+            input {
+              margin-right: 0.5%;
+            }
+
+            strong {
+              margin-right: 3%;
+            }
+
+            hr {
+              width: 100%;
+              margin-left: 0%;
+              margin-top: 5%;
+            }
+
+            .agreeCheck {
+              margin-left: 10%;
+              padding: 2% 0 0 0;
+
+              .serviceAgree {
+                display: flex;
+
+                input {
+                  margin-right: 1%;
+                }
+
+                p {
+                  margin-bottom: 1%;
+                }
+              }
+
+              .personalInfoAgree {
+                display: flex;
+
+                input {
+                  margin-right: 1%;
+                }
+              }
+            }
+          }
+        }
+
+        button {
+          margin-left: 0%;
+          background: #bbbbbb;
+          border-radius: 4px;
+          border: none;
+          color: white;
+          padding: 1%;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

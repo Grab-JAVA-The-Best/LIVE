@@ -1,0 +1,63 @@
+.HouseCardContent2 {
+  background-color: #fafafa;
+  
+  &.isActive {
+    cursor: pointer;
+  }
+
+  .houseContent {
+    display: flex;
+
+    .leftContent {
+      flex: 1;
+      .imgContainer {
+        width: 95%;
+        height: 160px;
+        border-radius: 4px;
+        padding: 3.5%;
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 4px;
+          object-fit: fill;
+        }
+      }
+    }
+
+    .rightContent {
+      flex: 1;
+      padding: 2% 3.5%;
+
+      .bName {
+        margin: 8px 0;
+      }
+
+      h3 {
+        margin-bottom: 8px;
+        font-size: 1.1em;
+        margin-bottom: 4px 0;
+      }
+      p {
+        font-size: 0.8em;
+        font-weight: 400;
+        line-height: 24 px;
+        color: #707070;
+        margin: 2px 0;
+      }
+    }
+  }
+}
+.consultBtn {
+  width: 100%;
+  padding: 2% 2%;
+  background: #dbd7d7;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 16px;
+  border: none;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  &:hover {
+    background: #42d395;
+  }
+}

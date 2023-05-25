@@ -1,0 +1,52 @@
+.inner {
+  .rankingContent {
+    margin: auto;
+    padding: 10% 0 0 0;
+    border: 0;
+    width: 80%;
+
+    h2 {
+      text-align: left;
+      font-size: 1.3rem;
+      margin-bottom: 5%;
+    }
+
+    .popularity {
+      background: linear-gradient(142.52deg, #ffb291 14.78%, #f40909 71.78%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .realtor {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+
+      color: #42d395;
+    }
+
+    .buttonBox {
+      display: flex;
+
+      .btn {
+        flex-direction: row;
+        margin: 0.7%;
+        width: 10%;
+        height: 40px;
+
+        margin-bottom: 1%;
+        background-color: white;
+        border: 0.3px solid #d9d9d9;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &.active {
+          background-color: #42d395;
+          color: white;
+          border: 0.3px solid #008a4f;
+        }
+      }
+    }
+  }
+}

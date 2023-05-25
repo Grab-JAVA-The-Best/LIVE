@@ -1,0 +1,47 @@
+.addressContent {
+  height: 100%;
+  width: 100%;
+
+  header {
+    box-sizing: border-box;
+    height: 56px;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #707070;
+
+    @media (max-width: 1024px) {
+      height: calc(56 * 0.1vw);
+      font-size: calc(16 * 0.1vw);
+    }
+
+    img {
+      width: 80px;
+      height: auto;
+      margin: 12px;
+
+      @media (max-width: 1024px) {
+        width: calc(80 * 0.1vw);
+        margin: calc(12 * 0.1vw);
+      }
+    }
+
+    button {
+      float: right;
+      font-size: 22px;
+      margin: 12px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s ease;
+
+      @media (max-width: 1024px) {
+        margin: calc(12 * 0.1vw);
+        font-size: calc(22 * 0.1vw);
+      }
+    }
+
+    button:hover {
+      opacity: 0.5;
+    }
+  }
+}

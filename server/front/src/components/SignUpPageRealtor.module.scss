@@ -1,0 +1,262 @@
+.signupRealtor {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  min-height: 1440px;
+  margin: 0 calc((620 / 1920) * 100%);
+
+  @media (max-width: 1024px) {
+    margin: 0;
+  }
+
+  .signupFieldSet {
+    margin-top: 32px;
+
+    @media (max-width: 1024px) {
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    .formInner {
+      width: 680px;
+
+      @media (max-width: 1024px) {
+        width: 100%;
+      }
+
+      @media (max-width: 480px) {
+        button {
+          font-size: 14px;
+        }
+      }
+
+      .findBrokerBox {
+        margin: 32px 0;
+
+        .boxInner {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+          padding: 16px;
+
+          h3 {
+            margin: 4px;
+          }
+          p {
+            margin: 8px;
+          }
+          button {
+            margin: 8px;
+            align-self: center;
+            width: 100%;
+            height: 46px;
+            background: #42d395;
+            border-width: 0;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 18px;
+            color: #fafafa;
+            transition: all 0.2s ease;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .profile {
+        margin: 32px 0;
+        img {
+          margin-bottom: 8px;
+          border-radius: 100px;
+          width: 100px;
+          height: 100px;
+        }
+
+        .profileBtn {
+          width: 60%;
+          margin: 0 20%;
+          height: 30px;
+          display: flex;
+          justify-content: space-around;
+          flex-direction: row;
+          align-items: center;
+
+          :hover {
+            .modBtn {
+              background: #0d6efd;
+              color: #ffffff;
+            }
+
+            .delBtn {
+              background: #dc3545;
+              color: #ffffff;
+            }
+          }
+
+          .modBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+            height: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 6px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #0d6efd;
+            background: #ffffff;
+            color: #0d6efd;
+            cursor: pointer;
+          }
+
+          .delBtn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 160px;
+            height: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            border: 1px solid;
+            border-radius: 6px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: #dc3545;
+            background: #ffffff;
+            color: #dc3545;
+            cursor: pointer;
+          }
+        }
+
+        p {
+          font-size: 16px;
+          font-weight: 700;
+          cursor: pointer;
+          transition: all 0.1s ease;
+        }
+      }
+
+      .inputBox {
+        min-height: 88px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+          align-self: baseline;
+          display: block;
+          font-weight: 700;
+          font-size: 18px;
+          height: 24px;
+          color: #050505;
+        }
+        input {
+          box-sizing: border-box;
+          width: 100%;
+          height: 36px;
+          font-size: 16px;
+          border: 1px solid #d9d9d9;
+          padding: 4px 12px;
+          border-radius: 6px;
+
+          &:read-only {
+            background: repeating-linear-gradient(
+              -45deg,
+              #ebebeb,
+              #ebebeb 2px,
+              #fafafa 0,
+              #fafafa 12px
+            ) !important;
+          }
+        }
+        textarea {
+          box-sizing: border-box;
+          width: 100%;
+          height: 300px;
+          font-size: 16px;
+          border: 1px solid #d9d9d9;
+          padding: 4px 12px;
+          border-radius: 6px;
+
+          margin-bottom: 36px;
+        }
+        .errorText {
+          text-align: left;
+          margin: 4px;
+          font-weight: 400;
+          font-size: 14px;
+          color: #ff0000;
+        }
+
+        .inputButton {
+          box-sizing: content-box;
+          width: 100%;
+          height: 36px;
+          font-size: 16px;
+          border: 1px solid #d9d9d9;
+          border-radius: 7px;
+
+          input {
+            box-sizing: border-box;
+            width: 80%;
+            height: 36px;
+            font-size: 16px;
+            border: none;
+            padding: 4px 12px;
+            border-radius: 6px;
+            float: left;
+          }
+
+          :hover {
+            opacity: 0.75;
+          }
+
+          button {
+            height: 100%;
+            width: 20%;
+            float: left;
+            border-radius: 6px;
+            background-color: #42d395;
+            border-style: none;
+            font-size: 16px;
+            font-weight: 700;
+            color: #fafafa;
+            transition: all 0.2s ease;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .signUpBtn {
+        :hover {
+          opacity: 0.75;
+          background: #022f1c;
+        }
+        button {
+          width: 100%;
+          height: 46px;
+          background: #42d395;
+          border-width: 0;
+          border-radius: 6px;
+          font-weight: 700;
+          font-size: 18px;
+          color: #fafafa;
+          transition: all 0.2s ease;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .userLink {
+      :hover {
+        font-weight: 700;
+      }
+      a {
+        line-height: 48px;
+        color: midnightblue;
+      }
+    }
+  }
+}

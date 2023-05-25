@@ -1,0 +1,100 @@
+.searchBox {
+  padding: 1%;
+  border-radius: 12px;
+  overflow: none;
+
+  .selectBox {
+    display: flex;
+
+    margin: 0 auto;
+    margin-right: auto;
+
+    width: 80%;
+
+    &::after {
+      position: static;
+    }
+
+    > div {
+      width: calc(33%);
+      height: 2.5vw;
+    }
+  }
+
+  .searchInput {
+    display: flex;
+
+    width: 80%;
+
+    padding: 1.4rem;
+
+    text-align: center;
+    margin: 0 auto;
+
+    position: relative;
+
+    .inputText {
+      display: flex;
+      width: 100%;
+
+      input {
+        padding: 1rem;
+
+        padding-inline-start: 2rem;
+
+        margin-right: 4px;
+        border-radius: 4px;
+        flex: auto;
+
+        height: 2.5vw;
+      }
+
+      button {
+        padding: 0.7% 1%;
+        border-radius: 7px;
+        border: none;
+
+        height: 2.5vw;
+
+        cursor: pointer;
+      }
+    }
+
+    .badge {
+      position: absolute;
+
+      max-height: 24rem;
+      overflow-y: auto;
+
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      transform: translateY(100%);
+
+      border: 1px solid #bbbbbb;
+      border-radius: 8px;
+      padding: 1em;
+
+      background-color: #fafafa;
+
+      li {
+        width: 100%;
+        min-height: 150px;
+        margin: 8px 0;
+        border: 1px solid #bbbbbb;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      li:hover {
+        opacity: 0.9;
+        border: 1px solid #747474;
+      }
+    }
+  }
+}
+
+.listbox {
+  margin: 0, 20px;
+}

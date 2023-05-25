@@ -1,0 +1,30 @@
+.leftContainer {
+  width: 35%;
+  margin-right: 5%;
+  max-height: 588px;
+  h2 {
+    text-align: left;
+    margin-bottom: 0em;
+  }
+  .leftListContainer {
+    padding: 30px 15px 30px 15px;
+    height: 100%;
+    text-align: left;
+    ul {
+      margin-top: 15px;
+      border: 2px solid #dddddd;
+      border-radius: 4px;
+    }
+    .leftEmptyContainer {
+      height: 100%;
+      color: rgba(187, 187, 187, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(250, 250, 250, 1);
+      box-sizing: border-box;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 26%);
+      border-radius: 4px;
+    }
+  }
+}

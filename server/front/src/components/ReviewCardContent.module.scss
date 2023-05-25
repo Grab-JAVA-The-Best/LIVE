@@ -1,0 +1,36 @@
+.content {
+  background: #ffffff;
+  color: #000000;
+  padding: 20px;
+  text-align: left;
+  border-radius: 12px;
+  min-width: 160px;
+  .headerContentContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      text-align: left;
+    }
+    .starScoreContainer {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      text-align: right;
+      color: #42D395;
+      div {
+        &:first-child {
+          font-size: 1.5rem;
+          padding-bottom: 2px;
+          color: #42D395;
+        }
+        &:last-child {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  p {
+    color: #BBBBBB;
+  }
+}

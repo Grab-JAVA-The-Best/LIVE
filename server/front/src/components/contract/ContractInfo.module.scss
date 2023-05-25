@@ -1,0 +1,58 @@
+.contractInfo {
+  margin: 2%;
+
+  .inner {
+    width: 67.7%;
+    margin-left: 15%;
+
+
+    h2 {
+      text-align: left;
+      padding: 0 0 2% 0;
+    }
+
+    .infoContent {
+
+      margin: 0 25%;
+      text-align: left;
+      padding: 3% 0;
+      position: relative;
+      right: 25%;
+    }
+
+    hr {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .contractInfo {
+    margin: 0%;
+
+    .inner {
+      width: 100%;
+      margin-left: 0;
+
+      h2 {
+        margin-top: 3%;
+        margin-left: 0;
+        margin-bottom: 2%;
+      }
+
+      .infoContent {
+        margin: 0;
+        text-align: left;
+        padding: 3% 0;
+        position: relative;
+        right: 6%;
+        margin-left: 10%;
+      }
+
+      hr {
+        width: 92%;
+        margin-left: 3%;
+      }
+    }
+  }
+}

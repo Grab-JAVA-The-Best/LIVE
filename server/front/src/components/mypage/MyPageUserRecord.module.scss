@@ -1,0 +1,10 @@
+.recordBox {
+  width: 66.7%;
+  margin: 0 16.65%;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin: 0%;
+  }
+}

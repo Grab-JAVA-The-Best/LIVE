@@ -1,0 +1,698 @@
+.houseRegist {
+  height: 100%;
+  width: 1024px;
+  margin: 32px calc((100vw - 1024px) / 2);
+
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+
+  @media (max-width: 1024px) {
+    width: calc(1024 * 0.1vw);
+    margin: calc(32 * 0.1vw) calc((100vw - (1024px * 0.1vw) / 1px) / 2);
+  }
+
+  .registFieldSet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+      width: 90%;
+      margin: 0 5%;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin: 0 0 24px 0;
+    }
+
+    .registDescription {
+      box-sizing: border-box;
+      width: 920px;
+      height: 106px;
+      background: #fafafa;
+      border: 1px solid #42d395;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 1024px) {
+        width: calc(920 * 0.1vw);
+        height: calc(106 * 0.1vw);
+        min-height: 68px;
+      }
+
+      .descIcon {
+        display: flex;
+        justify-content: center;
+        width: 10%;
+
+        @media (max-width: 768px) {
+          display: none;
+        }
+
+        .icon {
+          box-sizing: border-box;
+          width: 40px;
+          height: 40px;
+          border-radius: 100%;
+          background: #42d395;
+          color: white;
+          border: 2px solid #42d395;
+        }
+      }
+
+      .descText {
+        width: 80%;
+        margin-right: 10%;
+
+        @media (max-width: 768px) {
+          margin: 10%;
+        }
+
+        p {
+          float: left;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+
+          @media (max-width: 1024px) {
+            font-size: (16 * 0.1vw);
+          }
+        }
+      }
+    }
+
+    .formInner {
+      width: 100%;
+      font-size: 16px;
+
+      table {
+        width: 100%;
+        border-width: 1px 0;
+        border-color: black;
+        border-style: solid;
+        border-collapse: collapse;
+        margin-top: 12px;
+
+        @media (max-width: 1024px) {
+          width: 20%;
+        }
+
+        tr {
+          border-width: 0 0 1px 0;
+          border-color: #bababa;
+          border-style: solid;
+          display: flex;
+          text-align: start;
+
+          .infoTitle {
+            width: 120px;
+            padding: 24px 16px;
+
+            @media (max-width: 1024px) {
+              width: calc(120 * 0.1vw);
+              padding: calc(24 * 0.1vw) calc(16 * 0.1vw);
+            }
+
+            h3 {
+              font-weight: 700;
+              font-size: 16px;
+
+              @media (max-width: 1024px) {
+                font-size: calc(16 * 0.1vw);
+              }
+            }
+          }
+
+          td {
+            padding: 12px;
+            justify-content: baseline;
+            width: 920px;
+
+            @media (max-width: 1024px) {
+              width: calc(800 * 0.1vw);
+              padding: calc(12 * 0.1vw);
+            }
+          }
+        }
+      }
+
+      .defaultInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin: 40px 0;
+
+        @media (max-width: 1024px) {
+          margin: calc(40 * 0.1vw) 0;
+          font-size: calc(16 * 0.1vw);
+        }
+
+        .mainAddress {
+          box-sizing: border-box;
+          width: 280px;
+          height: 40px;
+          background: #fafafa;
+          border: 1px solid #bbbbbb;
+          border-radius: 4px;
+          padding: 8px;
+          margin: 4px;
+
+          @media (max-width: 1024px) {
+            width: calc(280 * 0.1vw);
+            height: calc(40 * 0.1vw);
+            margin: calc(4 * 0.1vw);
+            padding: calc(8 * 0.1vw);
+            font-size: calc(16 * 0.1vw);
+          }
+        }
+
+        .addressDesc {
+          font-size: 12px;
+
+          span {
+            color: red;
+            font-weight: 700;
+          }
+
+          @media (max-width: 1024px) {
+            font-size: calc(12 * 0.1vw);
+          }
+        }
+
+        .searchBtn {
+          box-sizing: border-box;
+          width: 113px;
+          height: 40px;
+          border: none;
+          border-radius: 4px;
+          background: #42d395;
+          margin: 4px;
+          color: white;
+          cursor: pointer;
+          transition: all 0.2s ease;
+
+          @media (max-width: 1024px) {
+            width: calc(113 * 0.1vw);
+            height: calc(40 * 0.1vw);
+            margin: calc(4 * 0.1vw);
+            font-size: calc(16 * 0.1vw);
+          }
+        }
+
+        .searchBtn:hover {
+          opacity: 0.7;
+        }
+
+        .buildingName {
+          box-sizing: border-box;
+          width: 140px;
+          height: 40px;
+          background: #fafafa;
+          border: 1px solid #bbbbbb;
+          border-radius: 4px;
+          padding: 8px;
+          margin: 4px;
+
+          @media (max-width: 1024px) {
+            width: calc(140 * 0.1vw);
+            height: calc(40 * 0.1vw);
+            margin: calc(4 * 0.1vw);
+            padding: calc(8 * 0.1vw);
+            font-size: calc(16 * 0.1vw);
+          }
+        }
+
+        .subAddress {
+          box-sizing: border-box;
+          width: 460px;
+          height: 40px;
+          background: #fafafa;
+          border: 1px solid #bbbbbb;
+          border-radius: 4px;
+          padding: 8px;
+          margin: 4px;
+
+          @media (max-width: 1024px) {
+            width: calc(460 * 0.1vw);
+            height: calc(40 * 0.1vw);
+            margin: calc(4 * 0.1vw);
+            padding: calc(8 * 0.1vw);
+            font-size: calc(16 * 0.1vw);
+          }
+        }
+
+        .purpose {
+          box-sizing: border-box;
+          width: 200px;
+          height: 40px;
+          background: #fafafa;
+          border: 1px solid #bbbbbb;
+          border-radius: 4px;
+          padding: 8px;
+          margin: 4px;
+
+          @media (max-width: 1024px) {
+            width: calc(200 * 0.1vw);
+            height: calc(40 * 0.1vw);
+            margin: calc(4 * 0.1vw);
+            padding: calc(8 * 0.1vw);
+            font-size: calc(16 * 0.1vw);
+          }
+        }
+
+        .purposeBtn {
+          box-sizing: border-box;
+          width: 113px;
+          height: 40px;
+          border: none;
+          border-radius: 4px;
+          background: #42d395;
+          margin: 4px;
+          color: white;
+          cursor: pointer;
+          transition: all 0.2s ease;
+
+          @media (max-width: 1024px) {
+            width: calc(113 * 0.1vw);
+            height: calc(40 * 0.1vw);
+            margin: calc(4 * 0.1vw);
+            font-size: calc(16 * 0.1vw);
+          }
+        }
+
+        .purposeBtn:hover {
+          opacity: 0.7;
+        }
+
+        .constract {
+          display: flex;
+          align-items: center;
+
+          input[type="checkbox"] {
+            margin: 8px;
+            width: 24px;
+            height: 24px;
+
+            @media (max-width: 1024px) {
+              width: calc(24 * 0.1vw);
+              height: calc(24 * 0.1vw);
+              margin: calc(8 * 0.1vw);
+              font-size: calc(16 * 0.1vw);
+            }
+          }
+          input[type="checkbox"]:checked {
+            accent-color: #42d395;
+          }
+        }
+
+        .unitInput {
+          box-sizing: border-box;
+          display: inline-flex;
+          justify-content: right;
+          margin: 0px 12px;
+
+          @media (max-width: 1024px) {
+            margin: 0 calc(12 * 0.1vw);
+          }
+
+          input {
+            box-sizing: border-box;
+            width: 120px;
+            height: 40px;
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            padding: 8px;
+            margin: 4px;
+            font-size: 16px;
+
+            @media (max-width: 1024px) {
+              width: calc(120 * 0.1vw);
+              height: calc(40 * 0.1vw);
+              margin: calc(4 * 0.1vw);
+              padding: calc(8 * 0.1vw);
+              font-size: calc(16 * 0.1vw);
+            }
+          }
+
+          input::placeholder {
+            font-size: 12px;
+
+            @media (max-width: 1024px) {
+              font-size: calc(12 * 0.1vw);
+            }
+          }
+
+          p {
+            position: absolute;
+            margin: 14px 16px;
+            font-size: 14px;
+            color: #bbbbbb;
+
+            @media (max-width: 1024px) {
+              margin: calc(14 * 0.1vw) calc(16 * 0.1vw);
+              font-size: calc(14 * 0.1vw);
+            }
+          }
+        }
+      }
+
+      .additionalInfo {
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+        @media (max-width: 1024px) {
+          margin: calc(40 * 0.1vw) 0;
+          font-size: calc(16 * 0.1vw);
+        }
+
+        td {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+        }
+
+        input[type="radio"] {
+          display: none;
+        }
+
+        label {
+          margin: 4px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          width: 100px;
+          height: 40px;
+          color: #bbbbbb;
+          background: #fafafa;
+          border: 1px solid #bbbbbb;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+
+          @media (max-width: 1024px) {
+            width: calc(100 * 0.1vw);
+            height: calc(40 * 0.1vw);
+          }
+
+          label:hover {
+            color: #42d395;
+            border-color: #42d395;
+          }
+        }
+
+        input[type="radio"]:checked + label {
+          color: white;
+          background: #42d395;
+          border: none;
+        }
+
+        .dateInput {
+          margin: 0 4px;
+
+          @media (max-width: 1024px) {
+            margin: calc(4 * 0.1vw);
+          }
+
+          input[type="date"] {
+            box-sizing: border-box;
+            width: 280px;
+            height: 40px;
+            background: #fafafa;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px 4px 4px 4px;
+            padding: 8px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 700;
+            padding-left: 100px;
+
+            @media (max-width: 1024px) {
+              width: calc(280 * 0.1vw);
+              height: calc(40 * 0.1vw);
+              padding: calc(8 * 0.1vw);
+              font-size: calc(16 * 0.1vw);
+            }
+          }
+
+          input[type="date"]::-webkit-calendar-picker-indicator {
+            background: none;
+            width: 64px;
+            height: 64px;
+            transform: translateX(-210px);
+            cursor: pointer;
+
+            @media (max-width: 1024px) {
+              width: calc(64 * 0.1vw);
+              height: calc(64 * 0.1vw);
+              transform: translateX(calc(-210 * 0.1vw));
+            }
+
+            @media (max-width: 768px) {
+              display: none;
+            }
+          }
+
+          .calendar {
+            position: absolute;
+            float: left;
+            width: 60px;
+            color: #bbbbbb;
+            background: transparent;
+            margin: 0;
+            border-width: 0 1px 0 0;
+            border-radius: 4px 0 0px 4px;
+
+            svg {
+              width: 20px;
+              height: 22px;
+            }
+
+            @media (max-width: 1024px) {
+              width: calc(60 * 0.1vw);
+              font-size: calc(16 * 0.1vw);
+            }
+
+            @media (max-width: 768px) {
+              display: none;
+            }
+          }
+
+          p {
+            font-size: 12px;
+
+            @media (max-width: 1024px) {
+              font-size: calc(12 * 0.1vw);
+            }
+
+            span {
+              font-size: 14px;
+              color: red;
+
+              @media (max-width: 1024px) {
+                font-size: calc(14 * 0.1vw);
+              }
+            }
+          }
+        }
+
+        .optionRow {
+          border: none;
+          .optionBox {
+            font-size: 16px;
+            border: none;
+
+            @media (max-width: 1024px) {
+              font-size: calc(16 * 0.1vw);
+            }
+
+            input[type="checkbox"] {
+              display: none;
+            }
+
+            label {
+              width: 100px;
+
+              @media (max-width: 1024px) {
+                width: calc(100 * 0.1vw);
+              }
+            }
+
+            label:hover {
+              color: #42d395;
+              border-color: #42d395;
+            }
+
+            input[type="checkbox"]:checked + label {
+              color: white;
+              background: #42d395;
+              border: none;
+            }
+          }
+        }
+      }
+
+      .detailInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin: 40px 0;
+
+        @media (max-width: 1024px) {
+          margin: calc(40 * 0.1vw) 0;
+          font-size: calc(16 * 0.1vw);
+        }
+
+        .deatailDesc {
+          display: block;
+          width: fit-content;
+
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            height: 30px;
+            color: #707070;
+
+            @media (max-width: 1024px) {
+              height: calc(30 * 0.1vw);
+              font-size: calc(18 * 0.1vw);
+            }
+          }
+        }
+
+        .detailDescInput {
+          width: 100%;
+          height: 200px;
+          font-size: 16px;
+          padding: 8px;
+
+          @media (max-width: 1024px) {
+            height: calc(200 * 0.1vw);
+            padding: calc(8 * 0.1vw);
+            font-size: calc(16 * 0.1vw);
+          }
+        }
+      }
+
+      .houseImage {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        margin: 40px 0;
+
+        @media (max-width: 1024px) {
+          margin: calc(40 * 0.1vw) 0;
+          font-size: calc(16 * 0.1vw);
+        }
+
+        .imageDesc {
+          display: block;
+          width: fit-content;
+
+          p {
+            font-weight: 400;
+            font-size: 18px;
+            height: 30px;
+            color: #707070;
+
+            @media (max-width: 1024px) {
+              height: calc(30 * 0.1vw);
+              font-size: calc(18 * 0.1vw);
+            }
+          }
+        }
+
+        .addButton {
+          box-sizing: border-box;
+          width: 120px;
+          height: 120px;
+          padding: 0px;
+          background: #fafafa;
+          border: 1px solid #bbbbbb;
+          border-radius: 4px;
+
+          @media (max-width: 1024px) {
+            width: calc(120 * 0.1vw);
+            height: calc(120 * 0.1vw);
+          }
+
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          cursor: pointer;
+
+          .plus {
+            font-size: 34px;
+
+            @media (max-width: 1024px) {
+              font-size: calc(34 * 0.1vw);
+            }
+          }
+          p {
+            color: #707070;
+          }
+        }
+
+        .imagePreview {
+          display: flex;
+          overflow: scroll !important;
+
+          div {
+            margin: 0 4px;
+
+            @media (max-width: 1024px) {
+              margin: calc(4 * 0.1vw);
+            }
+          }
+        }
+
+        .imagePreview::-webkit-scrollbar {
+          display: block !important;
+        }
+      }
+    }
+  }
+
+  .registBtn {
+    button {
+      width: 252px;
+      height: 52px;
+      background: #42d395;
+      border-radius: 4px;
+      border: none;
+      font-size: 20px;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+
+      @media (max-width: 1024px) {
+        width: calc(252 * 0.1vw);
+        height: calc(52 * 0.1vw);
+        font-size: calc(20 * 0.1vw);
+      }
+    }
+
+    button:hover {
+      opacity: 0.7;
+    }
+  }
+
+  * input:disabled {
+    background: repeating-linear-gradient(
+      -45deg,
+      #ebebeb,
+      #ebebeb 2px,
+      #fafafa 0,
+      #fafafa 12px
+    ) !important;
+  }
+}

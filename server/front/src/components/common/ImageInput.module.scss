@@ -1,0 +1,54 @@
+.previewImage {
+  width: 120px;
+  height: 120px;
+  background: #fafafa;
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row-reverse;
+  position: relative;
+
+  @media (max-width: 1024px) {
+    width: calc(120 * 0.1vw);
+    height: calc(120 * 0.1vw);
+  }
+
+  img {
+    width: 116px;
+    height: 116px;
+    border-radius: 4px;
+
+    @media (max-width: 1024px) {
+      width: calc(116 * 0.1vw);
+      height: calc(116 * 0.1vw);
+    }
+  }
+  button {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    float: right;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 12px;
+
+    @media (max-width: 1024px) {
+      width: calc(16 * 0.1vw);
+      height: calc(16 * 0.1vw);
+      font-size: calc(12 * 0.1vw);
+    }
+  }
+  button:hover {
+    font-size: 16px;
+    width: 20px;
+    color: red;
+
+    @media (max-width: 1024px) {
+      width: calc(20 * 0.1vw);
+      font-size: calc(16 * 0.1vw);
+    }
+  }
+}
